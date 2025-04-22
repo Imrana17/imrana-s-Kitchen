@@ -27,6 +27,25 @@
   <!-- Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <style>
+    .hero-img img {
+      border-radius: 50%; /* Makes the image a perfect circle */
+      width: 287px; /* Ensure width and height are equal */
+      height: 285px;
+      object-fit: cover; /* Ensures the image fits within the circle */
+      animation: moveUpDown 3s infinite ease-in-out; /* Adds the up-and-down movement */
+    }
+
+    @keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Yummy
   * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
@@ -109,7 +128,7 @@
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="img/" class="img-fluid" alt="">
+            <img src="img/hero-img 1.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
